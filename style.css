@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Ubuntu+Mono&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.__contentContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: url('https://i.gifer.com/1zLe.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.__coverMusic{
+    display: flex;
+    overflow: hidden;
+    /* justify-content: center;
+    align-items: center; */
+    width: 100vw;
+    height: 65vh;
+}
+
+.__cover > img{
+    height: 60vh;
+}
+.__cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 65vh;
+    /* background-color:#fe9c3c; */
+}
+body{
+    position: relative;
+}
+.__headerEP{
+    width: 100vw;
+    height: 20vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.__musicControls{
+    position:absolute;
+    width: 100vw;
+    height: 15vh;
+    bottom: 0;
+    background-color:#fe9c3c;
+}
+
+.__music{
+    width: 50vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: scroll; */
+}
+
+.__song{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    text-align: center;
+    padding: 0 20px;
+    margin: 6px 0px;
+    background-color: #000;
+    border-radius: 30px;
+    transition: all 0.3s ease-out;
+}
+
+.__song:hover{
+    background-color: #fe9c3c;
+    box-shadow: 0px 4px 8px 0px rgba(243,153,63, 0.7), 0px 6px 20px 0px rgba(0, 0, 0,0.19);
+}
+
+.__song:hover button pre{
+    color: #000;
+}
+.__song  button pre{ 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.10rem;
+    color: #fe9c3c;
+}
+
+.__song  button{
+    margin: 10px;
+    padding: 5px 20px;
+    background: unset;
+    border: unset;
+    outline: none;
+}
+
+.__musicControls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.__songName{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.__seekBar{
+    text-align: center;
+}
+#songname{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    padding: 3px;
+}
+
+#seekbar{
+    width: 50vw;
+    outline: none;
+}
+
+#seekbar ::-moz-progress-bar{
+    background-color: #fe9c3c;
+}
+
+.__footerBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.__contButton{
+    text-align: center;
+}
+
+.__contButton > button{
+    background: unset;
+    border: unset;
+    outline: none;
+}
+@media screen and (max-width: 598px) {
+    .__cover{
+        padding-top: 150px;
+        padding-bottom: 10px;
+        width: 100vw;
+    }
+    .__coverMusic{
+        overflow: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 75vh;
+    } 
+    .__cover > img{
+        height: 35vh;
+    }
+    .__song{
+        width: max-content;
+    }
+    .__headerEP{
+        height: 10vh;
+    }
+}
+
